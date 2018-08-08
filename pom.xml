@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.panda-lang</groupId>
             <artifactId>panda</artifactId>
-            <version>indev-0.7.11</version>
+            <version>indev-0.8.87</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>25.1-jre</version>
+            <version>26.0-jre</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -44,13 +44,13 @@
         <dependency>
            <groupId>org.apache.commons</groupId>
            <artifactId>commons-lang3</artifactId>
-           <version>3.0</version>
+           <version>3.7</version>
            <scope>provided</scope>
         </dependency>
         <dependency>
            <groupId>io.netty</groupId>
            <artifactId>netty-all</artifactId>
-           <version>4.1.27.Final</version>
+           <version>4.1.28.Final</version>
            <scope>provided</scope>
         </dependency>
         <dependency>
@@ -177,7 +177,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.1.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>

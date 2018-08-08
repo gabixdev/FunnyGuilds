@@ -959,6 +959,18 @@ public class PluginConfig {
     @CfgName("notification-title-fade-out")
     public int notificationTitleFadeOut = 10;
 
+    @CfgComment("Czy osoba, ktora zalozyla pierwsza gildie na serwerze powinna dostac nagrode")
+    @CfgName("should-give-rewards-for-first-guild")
+    public boolean giveRewardsForFirstGuild = false;
+
+    @CfgComment("Przedmioty, ktore zostana nadane graczowi, ktory pierwszy zalozyl gildie na serwerze")
+    @CfgComment("Dziala tylko w wypadku, gdy opcja \"should-give-rewards-for-first-guild\" jest wlaczona")
+    @CfgName("rewards-for-first-guild")
+    public List<String> firstGuildRewards_ = Collections.singletonList("1 diamond name:&bNagroda_za_pierwsza_gildie_na_serwerze");
+
+    @CfgExclude
+    public List<ItemStack> firstGuildRewards;
+
     @CfgComment("Zbior przedmiotow potrzebnych do resetu rankingu")
     @CfgName("rank-reset-needed-items")
     @CfgCollectionStyle(CfgCollectionStyle.CollectionStyle.ALWAYS_NEW_LINE)
@@ -1207,6 +1219,8 @@ public class PluginConfig {
 
         this.rankResetItems = loadItemStackList(this.rankResetItems_);
 
+        this.firstGuildRewards = loadItemStackList(this.firstGuildRewards_);
+
         this.warProtection = Parser.parseTime(this.warProtection_);
         this.warWait = Parser.parseTime(this.warWait_);
 
@@ -1333,6 +1347,7 @@ public class PluginConfig {
             public String enabled = "ga enabled";
             public String leader = "ga lider";
             public String deputy = "ga zastepca";
+            public String protection = "ga ochrona";
         }
     }
 
