@@ -40,22 +40,14 @@ dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '26.0-jre'
     compile group: 'org.diorite', name: 'diorite-config-minimal', version: '1.2'
     compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.11.1'
-    compileOnly(group: 'org.spigotmc', name: 'spigot-api', version: '1.13.1-R0.1-SNAPSHOT') {
-    }
-    compileOnly(group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1') {
-    }
-    compileOnly(group: 'io.netty', name: 'netty-all', version: '4.1.30.Final') {
-    }
-    compileOnly(group: 'com.sk89q.worldguard', name: 'worldguard-legacy', version: '6.2') {
-    }
-    compileOnly(group: 'com.sk89q', name: 'worldedit', version: '6.0.0-SNAPSHOT') {
-    }
-    compileOnly(group: 'net.milkbowl.vault', name: 'VaultAPI', version: '1.7') {
-    }
-    compileOnly(group: 'me.clip', name: 'placeholderapi', version: '2.9.2') {
-    }
-    compileOnly(group: 'codecrafter47.bungeetablistplus', name: 'bungeetablistplus-api-bukkit', version: '2.8.9') {
-    }
+    compileOnly group: 'org.spigotmc', name: 'spigot-api', version: '1.13.1-R0.1-SNAPSHOT'
+    compileOnly group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+    compileOnly group: 'io.netty', name: 'netty-all', version: '4.1.30.Final'
+    compileOnly group: 'com.sk89q.worldguard', name: 'worldguard-legacy', version: '6.2'
+    compileOnly group: 'com.sk89q', name: 'worldedit', version: '6.0.0-SNAPSHOT'
+    compileOnly group: 'net.milkbowl.vault', name: 'VaultAPI', version: '1.7'
+    compileOnly group: 'me.clip', name: 'placeholderapi', version: '2.9.2'
+    compileOnly group: 'codecrafter47.bungeetablistplus', name: 'bungeetablistplus-api-bukkit', version: '2.8.9'
     compileOnly(group: 'be.maximvdw', name: 'MVdWPlaceholderAPI', version: '2.5.2-SNAPSHOT') {
         exclude(module: 'spigot')
     }
